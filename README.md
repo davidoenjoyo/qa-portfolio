@@ -1,4 +1,4 @@
-# QA Testing Portfolio — David Cullend
+# QA Testing Portfolio — David Oenjoyo
 
 Manual & automation QA testing portfolio, built while following a structured 8-week self-study plan.
 
