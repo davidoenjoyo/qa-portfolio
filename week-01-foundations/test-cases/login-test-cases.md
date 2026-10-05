@@ -45,3 +45,34 @@ Spec assumptions: see [../README.md](../README.md#feature-under-test-login-form)
 ---
 
 **Breakdown:** 6 EP/BVA (username) + 6 EP/BVA (password) + 4 decision table + 4 supplementary = **20 test cases**.
+
+## Execution Results
+
+Executed manually against https://the-internet.herokuapp.com/login (Chrome, Windows 10). Valid credentials on this site: `tomsmith` / `SuperSecretPassword!`. The site has no length rules and no "Remember me" option, so the assumed-spec cases for those are marked N/A.
+
+| ID | Status | Actual Result | Note |
+|---|---|---|---|
+| TC-001 | Fail | "Your username is invalid!" instead of a "required" message | See BUG-001 |
+| TC-002 | Pass | Covered by TC-013 (valid username accepted) | |
+| TC-003 | N/A | No minimum-length rule on this site | |
+| TC-004 | N/A | No minimum-length rule on this site | |
+| TC-005 | N/A | No maximum-length rule on this site | |
+| TC-006 | N/A | No maximum-length rule on this site | |
+| TC-007 | Fail | "Your password is invalid!" instead of a "required" message | See BUG-001 |
+| TC-008 | Pass | Covered by TC-013 (valid password accepted) | |
+| TC-009 | N/A | No minimum-length rule on this site | |
+| TC-010 | N/A | No minimum-length rule on this site | |
+| TC-011 | N/A | No maximum-length rule on this site | |
+| TC-012 | N/A | No maximum-length rule on this site | |
+| TC-013 | Pass | Redirected to Secure Area with "You logged into a secure area!" | |
+| TC-014 | Fail | "Your password is invalid!" (specific, not generic) | See BUG-002 |
+| TC-015 | Fail | "Your username is invalid!" (specific, not generic) | See BUG-002 |
+| TC-016 | Fail | "Your username is invalid!" (specific, not generic) | See BUG-002 |
+| TC-017 | Fail | Login button stays active; empty form is submitted to the server | See BUG-001 |
+| TC-018 | Pass | Password characters shown as dots | |
+| TC-019 | N/A | No "Remember me" option on this site | |
+| TC-020 | Pass | Rejected with the standard "Your username is invalid!" error; no database error shown, no unauthorized login | |
+
+**Summary:** 5 Pass, 6 Fail (mapped to 2 bugs), 9 N/A (feature not present on the site under test), 0 not run.
+
+Fail means the actual behaviour differs from the expected result written for the assumed spec. Each Fail is mapped to a bug report where it points to a genuine defect.

@@ -30,9 +30,18 @@ Tested against public demo login pages (e.g. `the-internet.herokuapp.com`, `sauc
 
 | ID | Summary | Severity | Priority |
 |---|---|---|---|
-| [BUG-001](bug-reports/bug-001-example-password-validation.md) | No client-side validation error when password is below minimum length | Medium | Medium |
+| [BUG-001](bug-reports/bug-001-empty-form-misleading-error.md) | Empty required fields are reported as "invalid" instead of "required" | Low | Low |
+| [BUG-002](bug-reports/bug-002-user-enumeration-via-error-messages.md) | Login error messages reveal whether username or password is incorrect (user enumeration) | Medium | Medium |
 
-*(Additional bug reports will be added here as more real defects are found during practice testing — see [TEMPLATE-bug-report.md](bug-reports/TEMPLATE-bug-report.md) for the format used.)*
+New reports follow [TEMPLATE-bug-report.md](bug-reports/TEMPLATE-bug-report.md).
+
+## Bug tracking workflow
+
+Bugs were tracked on a Trello kanban board whose columns mirror the bug life cycle: New → In Progress → Fixed → Retest → Closed. BUG-002 was moved through every status to practice the full workflow.
+
+| 1. New | 2. In Progress | 3. Fixed | 4. Retest | 5. Closed |
+|---|---|---|---|---|
+| ![New](trello-board/1-new.png) | ![In Progress](trello-board/2-in-progress.png) | ![Fixed](trello-board/3-fixed.png) | ![Retest](trello-board/4-retest.png) | ![Closed](trello-board/5-closed.png) |
 
 ## What I'd do differently with more time
 
