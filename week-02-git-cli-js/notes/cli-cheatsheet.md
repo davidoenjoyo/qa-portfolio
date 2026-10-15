@@ -9,3 +9,4 @@ cd .. to move to up one level
 touch file.txt to make a new file
 cp coppy file
 mv move file
+- `git switch -c name` — creates a new branch and moves to it
