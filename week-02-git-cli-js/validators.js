@@ -12,14 +12,4 @@ function validatePassword(password) {
   return null;
 }
 
-console.log(validateUsername(""));
-console.log(validateUsername("dc"));
-console.log(validateUsername("dvd"));
-console.log(validateUsername("abcdefghij1234567890"));
-console.log(validateUsername("abcdefghij12345678901"));
-
-console.log(validatePassword(""));
-console.log(validatePassword("Pass1rd"));
-console.log(validatePassword("Passw0rd"));
-console.log(validatePassword("Passw0rd1234567890AB"));
-console.log(validatePassword("Passw0rd1234567890ABC"));
+module.exports = { validateUsername, validatePassword };
