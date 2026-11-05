@@ -12,8 +12,8 @@ Each week has its own folder containing a case study README, test cases, and sup
 
 | Week | Focus | Status |
 |---|---|---|
-| [week-01-foundations](week-01-foundations/) | SDLC/STLC, test case design (EP, BVA, Decision Table), bug life cycle | In progress |
-| week-02-tools | Git, CLI, programming fundamentals | Not started |
+| [week-01-foundations](week-01-foundations/) | SDLC/STLC, test case design (EP, BVA, Decision Table), bug life cycle | Done |
+| [week-02-git-cli-js](week-02-git-cli-js/) | Git, CLI, programming fundamentals | Done |
 | week-03-automation-intro | Selenium/Playwright basics | Not started |
 | week-04-automation-framework | Page Object Model, test framework structure | Not started |
 | week-05-api-testing | REST API testing (Postman/REST Assured) | Not started |
