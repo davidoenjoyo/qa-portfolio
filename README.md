@@ -14,7 +14,7 @@ Each week has its own folder containing a case study README, test cases, and sup
 |---|---|---|
 | [week-01-foundations](week-01-foundations/) | SDLC/STLC, test case design (EP, BVA, Decision Table), bug life cycle | Done |
 | [week-02-git-cli-js](week-02-git-cli-js/) | Git, CLI, programming fundamentals | Done |
-| week-03-automation-intro | Selenium/Playwright basics | Not started |
+| [week-03-playwright](week-03-playwright/) | Playwright basics: locators, assertions, data-driven tests, cross-browser runs | Done |
 | week-04-automation-framework | Page Object Model, test framework structure | Not started |
 | week-05-api-testing | REST API testing (Postman/REST Assured) | Not started |
 | week-06-cicd | CI/CD integration (GitHub Actions) | Not started |
